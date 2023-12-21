@@ -11,10 +11,23 @@
 		2C2714DB2B3433D4009951F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2714DA2B3433D4009951F0 /* SceneDelegate.swift */; };
 		2C2714DD2B3433D4009951F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2714DC2B3433D4009951F0 /* ViewController.swift */; };
 		2C2714E22B3433D6009951F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2714E12B3433D6009951F0 /* Assets.xcassets */; };
-		2C2714EE2B343410009951F0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2C2714ED2B343410009951F0 /* SnapKit */; };
-		2C2714F02B343410009951F0 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2C2714EF2B343410009951F0 /* SnapKit-Dynamic */; };
-		2C2714F32B343417009951F0 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 2C2714F22B343417009951F0 /* Then */; };
+		2C27152E2B346631009951F0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2C27152D2B346631009951F0 /* SnapKit */; };
+		2C2715302B346631009951F0 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2C27152F2B346631009951F0 /* SnapKit-Dynamic */; };
+		2C2715332B346639009951F0 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 2C2715322B346639009951F0 /* Then */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2C2715122B3441B7009951F0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2C2714D52B3433D4009951F0 /* iOS-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,9 +43,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2714EE2B343410009951F0 /* SnapKit in Frameworks */,
-				2C2714F32B343417009951F0 /* Then in Frameworks */,
-				2C2714F02B343410009951F0 /* SnapKit-Dynamic in Frameworks */,
+				2C27152E2B346631009951F0 /* SnapKit in Frameworks */,
+				2C2715332B346639009951F0 /* Then in Frameworks */,
+				2C2715302B346631009951F0 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 				2C2714D12B3433D4009951F0 /* Sources */,
 				2C2714D22B3433D4009951F0 /* Frameworks */,
 				2C2714D32B3433D4009951F0 /* Resources */,
+				2C2715122B3441B7009951F0 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -84,9 +98,9 @@
 			);
 			name = "iOS-Practice";
 			packageProductDependencies = (
-				2C2714ED2B343410009951F0 /* SnapKit */,
-				2C2714EF2B343410009951F0 /* SnapKit-Dynamic */,
-				2C2714F22B343417009951F0 /* Then */,
+				2C27152D2B346631009951F0 /* SnapKit */,
+				2C27152F2B346631009951F0 /* SnapKit-Dynamic */,
+				2C2715322B346639009951F0 /* Then */,
 			);
 			productName = "iOS-Practice";
 			productReference = 2C2714D52B3433D4009951F0 /* iOS-Practice.app */;
@@ -117,8 +131,8 @@
 			);
 			mainGroup = 2C2714CC2B3433D4009951F0;
 			packageReferences = (
-				2C2714EC2B343410009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				2C2714F12B343417009951F0 /* XCRemoteSwiftPackageReference "Then" */,
+				2C27152C2B346631009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				2C2715312B346639009951F0 /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 2C2714D62B3433D4009951F0 /* Products */;
 			projectDirPath = "";
@@ -351,7 +365,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2C2714EC2B343410009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		2C27152C2B346631009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -359,7 +373,7 @@
 				minimumVersion = 5.6.0;
 			};
 		};
-		2C2714F12B343417009951F0 /* XCRemoteSwiftPackageReference "Then" */ = {
+		2C2715312B346639009951F0 /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then";
 			requirement = {
@@ -370,19 +384,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2C2714ED2B343410009951F0 /* SnapKit */ = {
+		2C27152D2B346631009951F0 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2C2714EC2B343410009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 2C27152C2B346631009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		2C2714EF2B343410009951F0 /* SnapKit-Dynamic */ = {
+		2C27152F2B346631009951F0 /* SnapKit-Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2C2714EC2B343410009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 2C27152C2B346631009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
 		};
-		2C2714F22B343417009951F0 /* Then */ = {
+		2C2715322B346639009951F0 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2C2714F12B343417009951F0 /* XCRemoteSwiftPackageReference "Then" */;
+			package = 2C2715312B346639009951F0 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
 		};
 /* End XCSwiftPackageProductDependency section */
