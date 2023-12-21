@@ -93,6 +93,7 @@ struct practiceWidget: Widget {
         }
         .configurationDisplayName("JiwonStyle")
         .description("I made it. haha blabla haha💖")
+        .supportedFamilies([.systemSmall,.systemMedium,.systemLarge])
     }
 }
 
