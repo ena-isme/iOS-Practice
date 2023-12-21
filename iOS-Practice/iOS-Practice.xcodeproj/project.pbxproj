@@ -11,10 +11,41 @@
 		2C2714DB2B3433D4009951F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2714DA2B3433D4009951F0 /* SceneDelegate.swift */; };
 		2C2714DD2B3433D4009951F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2714DC2B3433D4009951F0 /* ViewController.swift */; };
 		2C2714E22B3433D6009951F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2714E12B3433D6009951F0 /* Assets.xcassets */; };
-		2C2714EE2B343410009951F0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2C2714ED2B343410009951F0 /* SnapKit */; };
-		2C2714F02B343410009951F0 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2C2714EF2B343410009951F0 /* SnapKit-Dynamic */; };
-		2C2714F32B343417009951F0 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 2C2714F22B343417009951F0 /* Then */; };
+		2C27152E2B346631009951F0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2C27152D2B346631009951F0 /* SnapKit */; };
+		2C2715302B346631009951F0 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2C27152F2B346631009951F0 /* SnapKit-Dynamic */; };
+		2C2715332B346639009951F0 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 2C2715322B346639009951F0 /* Then */; };
+		2C7A9D552B347F1A0047BEC8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7A9D3E2B347EF00047BEC8 /* WidgetKit.framework */; };
+		2C7A9D562B347F1A0047BEC8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7A9D402B347EF00047BEC8 /* SwiftUI.framework */; };
+		2C7A9D592B347F1A0047BEC8 /* practiceWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A9D582B347F1A0047BEC8 /* practiceWidgetBundle.swift */; };
+		2C7A9D5B2B347F1A0047BEC8 /* practiceWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A9D5A2B347F1A0047BEC8 /* practiceWidget.swift */; };
+		2C7A9D5D2B347F1B0047BEC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A9D5C2B347F1B0047BEC8 /* Assets.xcassets */; };
+		2C7A9D612B347F1B0047BEC8 /* practiceWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2C7A9D542B347F1A0047BEC8 /* practiceWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2C7A9D7D2B34A3710047BEC8 /* MonthlyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A9D7C2B34A3710047BEC8 /* MonthlyConfig.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C7A9D5F2B347F1B0047BEC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C2714CD2B3433D4009951F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C7A9D532B347F1A0047BEC8;
+			remoteInfo = practiceWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2C2715122B3441B7009951F0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2C7A9D612B347F1B0047BEC8 /* practiceWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2C2714D52B3433D4009951F0 /* iOS-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +54,14 @@
 		2C2714DC2B3433D4009951F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C2714E12B3433D6009951F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C2714E62B3433D6009951F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C7A9D3E2B347EF00047BEC8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		2C7A9D402B347EF00047BEC8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		2C7A9D542B347F1A0047BEC8 /* practiceWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = practiceWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C7A9D582B347F1A0047BEC8 /* practiceWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practiceWidgetBundle.swift; sourceTree = "<group>"; };
+		2C7A9D5A2B347F1A0047BEC8 /* practiceWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practiceWidget.swift; sourceTree = "<group>"; };
+		2C7A9D5C2B347F1B0047BEC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C7A9D5E2B347F1B0047BEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C7A9D7C2B34A3710047BEC8 /* MonthlyConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,9 +69,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2714EE2B343410009951F0 /* SnapKit in Frameworks */,
-				2C2714F32B343417009951F0 /* Then in Frameworks */,
-				2C2714F02B343410009951F0 /* SnapKit-Dynamic in Frameworks */,
+				2C27152E2B346631009951F0 /* SnapKit in Frameworks */,
+				2C2715332B346639009951F0 /* Then in Frameworks */,
+				2C2715302B346631009951F0 /* SnapKit-Dynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C7A9D512B347F1A0047BEC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C7A9D562B347F1A0047BEC8 /* SwiftUI.framework in Frameworks */,
+				2C7A9D552B347F1A0047BEC8 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				2C2714D72B3433D4009951F0 /* iOS-Practice */,
+				2C7A9D572B347F1A0047BEC8 /* practiceWidget */,
+				2C7A9D3D2B347EF00047BEC8 /* Frameworks */,
 				2C2714D62B3433D4009951F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				2C2714D52B3433D4009951F0 /* iOS-Practice.app */,
+				2C7A9D542B347F1A0047BEC8 /* practiceWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +118,27 @@
 			path = "iOS-Practice";
 			sourceTree = "<group>";
 		};
+		2C7A9D3D2B347EF00047BEC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C7A9D3E2B347EF00047BEC8 /* WidgetKit.framework */,
+				2C7A9D402B347EF00047BEC8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C7A9D572B347F1A0047BEC8 /* practiceWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2C7A9D7C2B34A3710047BEC8 /* MonthlyConfig.swift */,
+				2C7A9D582B347F1A0047BEC8 /* practiceWidgetBundle.swift */,
+				2C7A9D5A2B347F1A0047BEC8 /* practiceWidget.swift */,
+				2C7A9D5C2B347F1B0047BEC8 /* Assets.xcassets */,
+				2C7A9D5E2B347F1B0047BEC8 /* Info.plist */,
+			);
+			path = practiceWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,20 +149,39 @@
 				2C2714D12B3433D4009951F0 /* Sources */,
 				2C2714D22B3433D4009951F0 /* Frameworks */,
 				2C2714D32B3433D4009951F0 /* Resources */,
+				2C2715122B3441B7009951F0 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C7A9D602B347F1B0047BEC8 /* PBXTargetDependency */,
+			);
+			name = "iOS-Practice";
+			packageProductDependencies = (
+				2C27152D2B346631009951F0 /* SnapKit */,
+				2C27152F2B346631009951F0 /* SnapKit-Dynamic */,
+				2C2715322B346639009951F0 /* Then */,
+			);
+			productName = "iOS-Practice";
+			productReference = 2C2714D52B3433D4009951F0 /* iOS-Practice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C7A9D532B347F1A0047BEC8 /* practiceWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C7A9D622B347F1B0047BEC8 /* Build configuration list for PBXNativeTarget "practiceWidgetExtension" */;
+			buildPhases = (
+				2C7A9D502B347F1A0047BEC8 /* Sources */,
+				2C7A9D512B347F1A0047BEC8 /* Frameworks */,
+				2C7A9D522B347F1A0047BEC8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "iOS-Practice";
-			packageProductDependencies = (
-				2C2714ED2B343410009951F0 /* SnapKit */,
-				2C2714EF2B343410009951F0 /* SnapKit-Dynamic */,
-				2C2714F22B343417009951F0 /* Then */,
-			);
-			productName = "iOS-Practice";
-			productReference = 2C2714D52B3433D4009951F0 /* iOS-Practice.app */;
-			productType = "com.apple.product-type.application";
+			name = practiceWidgetExtension;
+			productName = practiceWidgetExtension;
+			productReference = 2C7A9D542B347F1A0047BEC8 /* practiceWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,6 +196,9 @@
 					2C2714D42B3433D4009951F0 = {
 						CreatedOnToolsVersion = 15.1;
 					};
+					2C7A9D532B347F1A0047BEC8 = {
+						CreatedOnToolsVersion = 15.1;
+					};
 				};
 			};
 			buildConfigurationList = 2C2714D02B3433D4009951F0 /* Build configuration list for PBXProject "iOS-Practice" */;
@@ -117,14 +211,15 @@
 			);
 			mainGroup = 2C2714CC2B3433D4009951F0;
 			packageReferences = (
-				2C2714EC2B343410009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				2C2714F12B343417009951F0 /* XCRemoteSwiftPackageReference "Then" */,
+				2C27152C2B346631009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				2C2715312B346639009951F0 /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 2C2714D62B3433D4009951F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				2C2714D42B3433D4009951F0 /* iOS-Practice */,
+				2C7A9D532B347F1A0047BEC8 /* practiceWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +230,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C2714E22B3433D6009951F0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C7A9D522B347F1A0047BEC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C7A9D5D2B347F1B0047BEC8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +254,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2C7A9D502B347F1A0047BEC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C7A9D5B2B347F1A0047BEC8 /* practiceWidget.swift in Sources */,
+				2C7A9D7D2B34A3710047BEC8 /* MonthlyConfig.swift in Sources */,
+				2C7A9D592B347F1A0047BEC8 /* practiceWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C7A9D602B347F1B0047BEC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C7A9D532B347F1A0047BEC8 /* practiceWidgetExtension */;
+			targetProxy = 2C7A9D5F2B347F1B0047BEC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2C2714E72B3433D6009951F0 /* Debug */ = {
@@ -276,6 +397,7 @@
 		2C2714EA2B3433D6009951F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +425,7 @@
 		2C2714EB2B3433D6009951F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -321,6 +444,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "shinjiwon.iOS-Practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C7A9D632B347F1B0047BEC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L22KGAL4ND;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = practiceWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = practiceWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shinjiwon.iOS-Practice.practiceWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C7A9D642B347F1B0047BEC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L22KGAL4ND;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = practiceWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = practiceWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shinjiwon.iOS-Practice.practiceWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,10 +525,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2C7A9D622B347F1B0047BEC8 /* Build configuration list for PBXNativeTarget "practiceWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C7A9D632B347F1B0047BEC8 /* Debug */,
+				2C7A9D642B347F1B0047BEC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2C2714EC2B343410009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		2C27152C2B346631009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -359,7 +545,7 @@
 				minimumVersion = 5.6.0;
 			};
 		};
-		2C2714F12B343417009951F0 /* XCRemoteSwiftPackageReference "Then" */ = {
+		2C2715312B346639009951F0 /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then";
 			requirement = {
@@ -370,19 +556,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2C2714ED2B343410009951F0 /* SnapKit */ = {
+		2C27152D2B346631009951F0 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2C2714EC2B343410009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 2C27152C2B346631009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		2C2714EF2B343410009951F0 /* SnapKit-Dynamic */ = {
+		2C27152F2B346631009951F0 /* SnapKit-Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2C2714EC2B343410009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 2C27152C2B346631009951F0 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
 		};
-		2C2714F22B343417009951F0 /* Then */ = {
+		2C2715322B346639009951F0 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2C2714F12B343417009951F0 /* XCRemoteSwiftPackageReference "Then" */;
+			package = 2C2715312B346639009951F0 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
 		};
 /* End XCSwiftPackageProductDependency section */
