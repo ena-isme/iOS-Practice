@@ -52,22 +52,28 @@ struct DayEntry: TimelineEntry {
 
 struct practiceWidgetEntryView : View {
     var entry: DayEntry
+    var config: MonthConfig
+    
+    init(entry: DayEntry) {
+        self.entry = entry
+        self.config = MonthConfig.determineConfig(from: entry.date)
+    }
     
     var body: some View {
         VStack {
             HStack {
-                Text("☃️")
+                Text(config.emojiText)
                 Text(entry.date.weekdayDisplayForms)
                     .font(.title3)
                     .fontWeight(.bold)
                     .minimumScaleFactor(0.6)    
-                    .foregroundColor(.black.opacity(0.6))
+                    .foregroundColor(config.weekdayTextColor)
 //                Spacer()
             }
             
             Text(entry.date.dayDisplayForms)
                 .font(.system(size: 80, weight: .heavy))
-                .foregroundColor(.white.opacity((0.8)))
+                .foregroundColor(config.dayTextColor)
         }
     }
 }
@@ -80,8 +86,10 @@ struct practiceWidget: Widget {
         
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             if #available(iOS 17.0, *) {
+                var config = MonthConfig.determineConfig(from: entry.date)
+                
                 practiceWidgetEntryView(entry: entry)
-                    .containerBackground(Color.gray, for: .widget)
+                    .containerBackground(config.backgroundColor, for: .widget)
                 //                    .onAppear {
                 //                        print("17 이상")
                 //                    }
