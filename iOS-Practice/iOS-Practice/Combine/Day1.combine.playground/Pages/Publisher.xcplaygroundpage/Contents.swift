@@ -11,5 +11,5 @@ myIntArrayPublisher.sink(receiveCompletion: { completion in
         print(error)
     }
 }, receiveValue: { receivedValue in
-    print(receivedValue)
+            print(receivedValue)
 })
