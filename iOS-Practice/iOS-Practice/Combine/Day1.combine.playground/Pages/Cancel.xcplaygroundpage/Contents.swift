@@ -24,3 +24,14 @@ myDefaultPublisher.sink(receiveCompletion: { completion in
 }).store(in: &mySubscriptionSet)
 
 NotificationCenter.default.post(Notification(name: myDefaultNotification))
+
+class MyFriend {
+    var name = "지원" {
+        didSet {
+                print(name)
+        }
+    }
+}
+
+var myFriend = MyFriend()
+var myFriendSubscription: AnyCancellable = ["지워닝"].publisher.assign(to: \.name, on: myFriend)
