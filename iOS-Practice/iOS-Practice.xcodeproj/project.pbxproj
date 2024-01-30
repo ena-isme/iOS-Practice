@@ -54,6 +54,7 @@
 		2C2714DC2B3433D4009951F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C2714E12B3433D6009951F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C2714E62B3433D6009951F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C3EAB892B69341500A575D1 /* PublisherPractice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PublisherPractice.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2C7A9D3E2B347EF00047BEC8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		2C7A9D402B347EF00047BEC8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		2C7A9D542B347F1A0047BEC8 /* practiceWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = practiceWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,8 +115,17 @@
 				2C2714DC2B3433D4009951F0 /* ViewController.swift */,
 				2C2714E12B3433D6009951F0 /* Assets.xcassets */,
 				2C2714E62B3433D6009951F0 /* Info.plist */,
+				2C3EAB862B69328000A575D1 /* Combine */,
 			);
 			path = "iOS-Practice";
+			sourceTree = "<group>";
+		};
+		2C3EAB862B69328000A575D1 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				2C3EAB892B69341500A575D1 /* PublisherPractice.playground */,
+			);
+			path = Combine;
 			sourceTree = "<group>";
 		};
 		2C7A9D3D2B347EF00047BEC8 /* Frameworks */ = {
